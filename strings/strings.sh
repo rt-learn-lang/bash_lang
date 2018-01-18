@@ -18,8 +18,7 @@ echo $string3
 
 
 # 4. Print a newline
-echo
-printf "\nPrinting newline before and after\n"
+printf "\nPrinting newline before and after\n\n"
 
 
 # 1. Tests an undefined variable
@@ -45,4 +44,10 @@ if [ -z  $defined ]; then  # Checks if the variable is defined,
 else
     echo "It is not empty"
 fi
+
+
+# 4. String Length
+var4="How Long?"
+size=${#var4}
+echo "Size of '$var4' is $size"
 
